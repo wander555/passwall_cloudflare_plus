@@ -1,0 +1,2 @@
+# passwall_cloudflare_plus
+自动选择最快的cloudflareIP并部署到passwall的节点
