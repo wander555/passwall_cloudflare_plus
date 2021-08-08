@@ -3,6 +3,9 @@
 #停止passwall
 /etc/init.d/passwall stop
 
+#停止ssrplus
+#/etc/init.d/shadowsocksr stop
+
 sleep 2s
 
 cd CloudflareST/
@@ -26,3 +29,10 @@ uci commit passwall
 
 #启动passwall
 /etc/init.d/passwall restart
+
+#设置ssrplus的IP
+#uci set shadowsocksr.@servers[1].server=$anycast
+#uci commit shadowsocksr
+
+#启动ssrplus
+#/etc/init.d/shadowsocksr restart
